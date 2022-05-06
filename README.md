@@ -7,7 +7,7 @@ Synthesis
 ---
 ### Band-limited oscillators
 
-`[hv.osc saw]` - Band-limited PolyBlep sawtooth signal generator. [_more info_](https://github.com/cfloisand/pd-polyblep/blob/master/Source/polyblep~.c)
+`[hv.osc saw]` - Band-limited PolyBlep sawtooth signal generator. [_more info_](https://github.com/cfloisand/pd-externals/blob/master/Source/polyblep%7E.c)
 
 `[hv.osc sine]` - Same as Pd `[osc~]` added for convenience.
 

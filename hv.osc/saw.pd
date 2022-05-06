@@ -5,7 +5,7 @@
 #X obj 127 105 inlet phase;
 #X text 40 25 Band-limited saw based on christian foisland's polyblep
 implementation:;
-#X text 41 56 https://github.com/cfloisand/pd-polyblep/blob/master/Source/polyblep~.c
+#X text 41 56 https://github.com/cfloisand/pd-externals/blob/master/Source/polyblep%7E.c
 ;
 #X obj 140 191 *~;
 #X obj 43 280 +~;

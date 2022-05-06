@@ -18,7 +18,7 @@ wavetables.;
 #X obj 302 493 *~ 0;
 #X obj 31 508 *~ 1;
 #X text 28 114 References:;
-#X text 59 140 https://github.com/cfloisand/pd-polyblep/blob/master/Source/polyblep~.c
+#X text 59 140 https://github.com/cfloisand/pd-externals/blob/master/Source/polyblep%7E.c
 ;
 #X text 59 180 http://musicdsp.org/files/bandlimited.pdf;
 #X text 59 210 http://www.martin-finke.de/blog/articles/audio-plugins-018-polyblep-oscillator/
