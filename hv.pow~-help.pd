@@ -1,0 +1,32 @@
+#N canvas 485 59 481 435 10;
+#X text 22 10 This abstraction presents an alternative implementation
+to the pow~ object. Heavy uses the system's powf() function (as does
+Pd) \, but some applications may wish to avoid the powf() function
+entirely. Both inlets are signal-rate. This abstraction may also make
+use of the hv.exp object instead of the exp~ object.;
+#X obj 54 145 sig~;
+#X obj 137 181 loadbang;
+#X obj 137 205 metro 100;
+#X obj 137 229 snapshot~;
+#X floatatom 54 109 5 0 0 0 - - -;
+#X obj 105 145 sig~;
+#X floatatom 105 109 5 0 0 0 - - -;
+#X floatatom 137 254 7 0 0 0 - - -;
+#X text 210 123 An optional creation argument initializes right inlet:
+, f 30;
+#X text 26 294 WARNING: it's easy to generate "infinity" by accident
+\, and if you do \, the DSP chain may dramatically slow down if you're
+using an i386 or ia64 processor. Out-of-range floating point values
+are thousands of times slower to compute with than in-range ones.,
+f 62;
+#X obj 67 181 hv.pow~;
+#X text 240 391 updated for heavylib version 0.2;
+#X obj 383 147 hv.pow~ 2;
+#X connect 1 0 11 0;
+#X connect 2 0 3 0;
+#X connect 3 0 4 0;
+#X connect 4 0 8 0;
+#X connect 5 0 1 0;
+#X connect 6 0 11 1;
+#X connect 7 0 6 0;
+#X connect 11 0 4 0;
