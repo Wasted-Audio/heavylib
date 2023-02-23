@@ -1,4 +1,4 @@
-#N canvas 107 196 552 358 10;
+#N canvas 849 146 552 358 10;
 #X obj 28 240 -~;
 #X obj 28 216 sig~ 1;
 #X obj 13 288 rpole~;
@@ -10,7 +10,7 @@
 #X obj 193 121 *;
 #X text 228 220 temp = abs(in);
 #X text 228 280 else;
-#X obj 148 194 r~ \$0-env;
+#X obj 153 194 r~ \$0-env;
 #X obj 67 319 s~ \$0-env;
 #X text 238 260 env = temp + attack_coeff * (env - temp);
 #X text 238 300 env = temp + release_coeff * (env - temp);
@@ -56,8 +56,8 @@
 #X connect 5 0 4 0;
 #X connect 6 0 5 0;
 #X restore 79 152 pd coeff;
-#X obj 79 217 hv.multiplex;
 #X text 228 239 if (tmp > env);
+#X obj 79 217 hv.multiplex~;
 #X connect 0 0 6 1;
 #X connect 1 0 0 0;
 #X connect 2 0 7 0;
@@ -67,15 +67,15 @@
 #X connect 5 0 22 0;
 #X connect 6 0 2 0;
 #X connect 8 0 21 0;
-#X connect 11 0 23 3;
+#X connect 11 0 24 3;
 #X connect 15 0 5 1;
 #X connect 15 0 8 1;
 #X connect 17 0 20 0;
 #X connect 18 0 5 0;
 #X connect 19 0 8 0;
 #X connect 20 0 6 0;
-#X connect 20 0 23 2;
-#X connect 21 0 23 1;
-#X connect 22 0 23 0;
-#X connect 23 0 0 1;
-#X connect 23 0 2 1;
+#X connect 20 0 24 2;
+#X connect 21 0 24 1;
+#X connect 22 0 24 0;
+#X connect 24 0 0 1;
+#X connect 24 0 2 1;

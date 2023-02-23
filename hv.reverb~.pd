@@ -1,12 +1,12 @@
-#N canvas 117 105 874 615 10;
+#N canvas 540 145 874 615 10;
 #X obj 20 385 *~;
 #X obj 20 20 inlet~;
 #X obj 35 273 r \$0-dry-gain;
 #X obj 20 464 outlet~;
 #X text 426 338 Original author: Miller Puckette;
 #X obj 338 20 inlet;
-#X obj 188 245 r \$0-lowcut;
-#X obj 185 186 r \$0-highcut;
+#X obj 191 245 r \$0-lowcut;
+#X obj 188 186 r \$0-highcut;
 #X obj 338 105 hv.dispatch \$0 highcut 24000;
 #X obj 338 127 hv.dispatch \$0 lowcut 5;
 #N canvas 397 74 957 645 guts 0;
@@ -264,8 +264,8 @@ recirculating reverberators found in G08.Reverb.pd in help browser.
 #X obj 136 164 vd~ \$0-predelay;
 #X obj 136 112 r \$0-predelay_ms;
 #X obj 338 193 hv.dispatch \$0 predelay_ms 0;
-#X obj 136 219 hv.filter lowpass;
-#X obj 136 276 hv.filter highpass;
+#X obj 136 219 hv.filter~ lowpass;
+#X obj 136 276 hv.filter~ highpass;
 #X connect 0 0 3 0;
 #X connect 0 0 12 0;
 #X connect 1 0 27 0;

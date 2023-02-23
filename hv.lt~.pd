@@ -1,4 +1,4 @@
-#N canvas 855 553 249 187 10;
+#N canvas 855 583 249 187 10;
 #X obj 130 31 inlet~;
 #X obj 31 31 inlet~;
 #X obj 31 126 outlet~;
@@ -9,15 +9,15 @@
 #X connect 1 0 2 0;
 #X restore 31 102 pd @hv_obj __and~f;
 #X obj 136 80 sig~ 1;
-#N canvas 715 101 223 209 @hv_obj 0;
+#N canvas 715 131 223 209 @hv_obj 1;
 #X obj 46 22 inlet~;
 #X obj 46 147 outlet~;
 #X obj 46 124 *~;
-#X obj 129 22 inlet~;
+#X obj 140 22 inlet~;
 #X obj 61 80 sig~ 1;
 #X obj 61 102 -~;
-#X obj 46 53 hv.lte;
-#X obj 96 54 hv.gte;
+#X obj 46 54 hv.lte~;
+#X obj 102 54 hv.gte~;
 #X connect 0 0 6 0;
 #X connect 0 0 7 0;
 #X connect 2 0 1 0;
