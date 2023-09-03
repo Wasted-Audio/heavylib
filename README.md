@@ -16,6 +16,22 @@ See the -help.pd patches for more information on each object.
 
 `[hv.osc~ square]` - Band-limited PolyBlep square signal generator.
 
+### LFOs
+
+These precision LFOs have control rate inlets and outlet, however they sample from signal rate oscillators and require DSP to be on.
+
+They give a float output between `0.0` - `1.0`. Because we `[snapshot]` every 1ms we get aliasing when we enter audio range frequencies.
+
+`[hv.lfo sine]` - Control `[snapshot~]` of  slow `[osc~]`.
+
+`[hv.lfo ramp]` - Control `[snapshot~]` `[phasor~]`.
+
+`[hv.lfo saw]` - Control rate sample and inverted `[phasor~]`.
+
+`[hv.lfo square]` - Amplified and clipped `[osc~]`, has phase offset.
+
+`[hv.lfo pulse]` - Band-limited PolyBlep square signal generator, taken from `[hv.osc~ square]`, instead of phase offset we get pulse width modulation.
+
 ### Noise
 
 `[hv.pinknoise~]` - Cheapish pinknoise generator. [_more info_](http://www.firstpr.com.au/dsp/pink-noise/)
