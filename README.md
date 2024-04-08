@@ -84,6 +84,10 @@ They give a float output between `0.0` - `1.0`. Because we `[snapshot]` every 1m
 
 `[hv.filter.gain~ highshelf]` - High shelving filter with Frequency, Q and Gain parameters (Biquad).
 
+`[hv.lop~]` - Lowpass variant with signal controlled cutoff (rpole~).
+
+`[hv.hip~]` - Highpass variant with signal controlled cutoff (rpole~).
+
 ## Math Operations
 
 ---
