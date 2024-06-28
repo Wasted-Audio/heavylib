@@ -1,7 +1,7 @@
 CHANGELOG
 =====
 
-Next Release
+0.4
 -----
 
 * Add `hv.lop~` and `hv.hip~` variants with signal controlled cutoff.
