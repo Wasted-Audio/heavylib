@@ -1,6 +1,11 @@
 CHANGELOG
 =====
 
+0.4.1
+-----
+
+* use bang~ instead of metro for LFO reads
+
 0.4
 -----
 
