@@ -66,6 +66,8 @@ They give a float output between `0.0` - `1.0`. Because we `[snapshot]` every 1m
 
 ### Filtering
 
+The default `[hv.filter~]` abstractions use control rate inputs and coefficient calculation. There are `[hv.filter.sig~]` alternatives that allow signal input.
+
 `[hv.filter~ allpass]` - Allpass filter with Q control (Biquad).
 
 `[hv.filter~ lowpass]` - Lowpass filter with Q control (Biquad).
