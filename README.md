@@ -16,6 +16,8 @@ See the -help.pd patches for more information on each object.
 
 `[hv.osc~ square]` - Band-limited PolyBlep square signal generator.
 
+`[hv.osc~ triangle]` - Band-limited PolyBlep triangle oscillator (from integrating a band-limited square). [_more info_](https://www.martin-finke.de/articles/audio-plugins-018-polyblep-oscillator/)
+
 ### LFOs
 
 These precision LFOs have control rate inlets and outlet, however they sample from signal rate oscillators and require DSP to be on.
