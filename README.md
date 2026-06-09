@@ -1,6 +1,6 @@
 # heavylib
 
-Library of [heavy](https://enzienaudio.com) compatible abstractions.
+Library of [heavy](https://github.com/Wasted-Audio/hvcc) compatible abstractions.
 
 See the -help.pd patches for more information on each object.
 
