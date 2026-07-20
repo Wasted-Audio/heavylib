@@ -1,6 +1,6 @@
 # heavylib
 
-Library of [heavy](https://enzienaudio.com) compatible abstractions.
+Library of [heavy](https://github.com/Wasted-Audio/hvcc) compatible abstractions.
 
 See the -help.pd patches for more information on each object.
 
@@ -65,6 +65,8 @@ They give a float output between `0.0` - `1.0`. Because we `[snapshot]` every 1m
 `[hv.reverb~]` - Simple reverb unit.
 
 ### Filtering
+
+The default `[hv.filter~]` abstractions use control rate inputs and coefficient calculation. There are `[hv.filter.sig~]` alternatives that allow signal input.
 
 `[hv.filter~ allpass]` - Allpass filter with Q control (Biquad).
 

@@ -1,6 +1,14 @@
 CHANGELOG
 =====
 
+0.5.0
+-----
+
+* Use `hv.vline~` in examples
+* Fix types in `hv.hip~`
+* Add filters with signal rate modulation under `hv.filter.sig~`
+* Add allpass and notch to `hv.filter~-help`
+
 0.4.1
 -----
 
